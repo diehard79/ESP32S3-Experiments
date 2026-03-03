@@ -1,0 +1,6 @@
+Command: C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:\esp\v5.5.3\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 Z:\Saeed\Workspace\Nazwi\ESP32 Projects\.Experiments\Display Text\build\exp1_display_text.elf Z:\Saeed\Workspace\Nazwi\ESP32 Projects\.Experiments\Display Text\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe' 'C:\esp\v5.5.3\esp-idf\tools\idf.py' '-p' 'COM7'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x21 (DOWNLOAD(USB/UART0))
+Saved PC:0x40041a76
+waiting for download

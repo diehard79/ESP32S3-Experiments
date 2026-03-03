@@ -1,0 +1,38 @@
+# ── CPU & System ─────────────────────────────────────────────────────────────
+CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ_240=y          # 240 MHz for smooth LVGL rendering
+CONFIG_FREERTOS_HZ=1000                        # 1 ms tick resolution
+
+# ── Flash ────────────────────────────────────────────────────────────────────
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_PARTITION_TABLE_SINGLE_APP=y
+
+# ── LVGL ─────────────────────────────────────────────────────────────────────
+# Enable the Montserrat fonts used in main.c (48 pt - smooth anti-aliased)
+CONFIG_LV_FONT_MONTSERRAT_48=y
+CONFIG_LV_FONT_MONTSERRAT_28=y
+CONFIG_LV_FONT_MONTSERRAT_32=y
+CONFIG_LV_FONT_MONTSERRAT_36=y
+
+
+# Also enable 14 pt as a fallback / debug convenience
+CONFIG_LV_FONT_MONTSERRAT_14=y
+
+# Use ESP-IDF malloc / memcpy (faster than LVGL's built-ins on ESP32)
+CONFIG_LV_MEMCPY_MEMSET_STD=y
+
+# Colour depth must match RGB565
+CONFIG_LV_COLOR_DEPTH_16=y
+
+# Subpixel anti-aliasing for smoother font rendering
+CONFIG_LV_FONT_SUBPX_BGR=y
+
+# ── Console / USB-JTAG ───────────────────────────────────────────────────────
+# ESP32-S3 uses native USB; route console through USB-Serial/JTAG controller
+# so idf.py monitor works without a manual BOOT+RESET sequence.
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+
+# ── Log level ────────────────────────────────────────────────────────────────
+CONFIG_LOG_DEFAULT_LEVEL_INFO=y
+
+# Enable complex/anti-aliased drawing
+CONFIG_LV_DRAW_SW_COMPLEX=y

@@ -1,0 +1,8 @@
+Command: ninja all
+[1/4] C:\Windows\system32\cmd.exe /C "cd /D "Z:\Saeed\Workspace\Nazwi\ESP32 Projects\.Experiments\Display Text\build\esp-idf\esptool_py" && C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:/esp/v5.5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "Z:/Saeed/Workspace/Nazwi/ESP32 Projects/.Experiments/Display Text/build/partition_table/partition-table.bin" "Z:/Saeed/Workspace/Nazwi/ESP32 Projects/.Experiments/Display Text/build/exp1_display_text.bin""
+exp1_display_text.bin binary size 0x888b0 bytes. Smallest app partition is 0x100000 bytes. 0x77750 bytes (47%) free.
+[2/4] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D "Z:\Saeed\Workspace\Nazwi\ESP32 Projects\.Experiments\Display Text\build\bootloader\esp-idf\esptool_py" && C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:/esp/v5.5.3/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "Z:/Saeed/Workspace/Nazwi/ESP32 Projects/.Experiments/Display Text/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5160 bytes. 0x2ea0 bytes (36%) free.
+[3/4] No install step for 'bootloader'
+[4/4] Completed 'bootloader'

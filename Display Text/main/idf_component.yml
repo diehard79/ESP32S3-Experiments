@@ -1,0 +1,9 @@
+## IDF Component Manager manifest
+## This file pulls LVGL v9.x from the Espressif Component Registry.
+## Run `idf.py update-dependencies` after cloning the project.
+
+dependencies:
+  lvgl/lvgl:
+    version: ">=9.0.0,<10.0.0"
+    rules:
+      - if: "idf_version >=5.0"

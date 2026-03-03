@@ -1,0 +1,10 @@
+idf_component_register(
+    SRCS "app_lcd.c"
+    INCLUDE_DIRS "include"
+    REQUIRES
+        driver
+        esp_lcd
+        esp_driver_ledc
+        esp_driver_spi
+        log
+)

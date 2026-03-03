@@ -1,0 +1,4 @@
+Command: ninja all
+fatal: bad config line 2 in file C:/esp/v5.5.3/esp-idf/.git/modules/components/bootloader/subproject/components/micro-ecc/micro-ecc/config
+warning: the value '1000                        # 1 ms tick resolution' is invalid for FREERTOS_HZ (defined at C:/esp/v5.5.3/esp-idf/components/freertos/Kconfig:33), which has type int -- assignment ignored
+fatal: bad config line 2 in file C:/esp/v5.5.3/esp-idf/.git/modules/components/openthread/openthread/config

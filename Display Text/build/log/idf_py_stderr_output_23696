@@ -1,0 +1,20 @@
+Command: C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe C:\esp\v5.5.3\esp-idf\tools/idf_monitor.py -p COM7 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 Z:\Saeed\Workspace\Nazwi\ESP32 Projects\.Experiments\Display Text\build\exp1_display_text.elf Z:\Saeed\Workspace\Nazwi\ESP32 Projects\.Experiments\Display Text\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\tools\python\v5.5.3\venv\Scripts\python.exe' 'C:\esp\v5.5.3\esp-idf\tools\idf.py' '-p' 'COM7'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM7 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40041a76: [0;33mets_delay_us[0m[0m in [0;32mROM[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "C:\esp\v5.5.3\esp-idf\tools\idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 505, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 1146, in communicate
+    self.wait()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 1209, in wait
+    return self._wait(timeout=timeout)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.10_3.10.3056.0_x64__qbz5n2kfra8p0\lib\subprocess.py", line 1506, in _wait
+    result = _winapi.WaitForSingleObject(self._handle,
+KeyboardInterrupt
